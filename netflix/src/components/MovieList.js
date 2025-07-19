@@ -8,7 +8,7 @@ const MovieList = ({title, movies}) => {
         <div className='flex overflow-x-auto no-scrollbar cursor-pointer'>
             <div className='flex items-center'>
               {
-                movies.map((movie)=>{
+                movies?.map((movie)=>{
                   return(
                     <MovieCard key={movie.id} posterPath={movie.poster_path}/>
                   )    

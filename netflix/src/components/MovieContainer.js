@@ -4,7 +4,7 @@ import {useSelector} from "react-redux"
 
 
 const MovieContainer = () => {
-  const movie = useSelector(store=> store.movie)
+  const movie = useSelector(store=> store.movie);
   
   
   return (
