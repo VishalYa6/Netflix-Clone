@@ -44,7 +44,9 @@ const SearchMovie = () => {
 
                 </form>
             </div>
-            <MovieList title={movieName} searchMovie={true} movies={searchedMovie} />
+            {
+                searchedMovie ? ( <MovieList title={movieName} searchMovie={true} movies={searchedMovie}/>) : (<h1>Movie Not Found!!</h1>)
+            }
         </>
 
     )
